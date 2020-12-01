@@ -459,12 +459,12 @@ logo img {
 
 /*  GENESE SECTION 2
 ===================================================*/
-/*
+
 .genese {
-    background-color: #652581;
+    background-color: transparent;
     background-position: center;
     background-size: cover;
-    height: 350vh;  */
+    height: 450vh;  
 
 }
 
@@ -502,7 +502,7 @@ logo img {
     background-image: url(jmdimages/minedecuivreNB.jpg);
     background-color: #652581;
     background-blend-mode: hard-light;
-    height: 300vh;
+    height: 400vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -530,8 +530,8 @@ logo img {
     border: thin #fff solid;
     border-radius: 10px;
     padding: 1%;
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     filter: drop-shadow(0 0 0.75rem #fff);
     
 }
@@ -613,13 +613,13 @@ figcaption p {
 
 /*  PRESTATIONS SECTION 3
 ============================================================================================================================== */
-/*
+
 .prestations {
-    background-color: #652581;
+    background-color: transparent;
     background-position: center;
     background-size: cover;
-    height: 200vh;
-}  */
+    height: 300vh;
+}  
 
 .col-sm-5-technologie {
     background-image: url(jmdimages/technologie.jpg);
@@ -634,7 +634,7 @@ figcaption p {
     border-radius: 10px;
     filter: drop-shadow(0 0 0.75rem #fff);
     width: 40%;
-    height: 150vh;
+    height: 250vh;
     margin: 1%;
     padding: 2%;
 }
@@ -681,8 +681,7 @@ figcaption p {
     border: thin #fff solid;
     border-radius: 10px;
     filter: drop-shadow(0 0 0.75rem #fff);
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 10%;
     padding: 2%;
     width: 40%;
     height: 100%;
