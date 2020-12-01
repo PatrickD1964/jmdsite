@@ -110,18 +110,34 @@ P {
     line-height: 120%;
 }
 
-
+/*
 body{ background-color: #652581;      
-}
-
+}        */
 
 .css-selector {
-    background: linear-gradient(270deg, #652581, #666971);
+    background: linear-gradient(270deg, #652581, #b3b2b2);
     background-size: 400% 400%;
-    animation: AnimationName 9s ease infinite;
+    -webkit-animation: JMD 10s ease infinite;
+    -moz-animation: JMD 10s ease infinite;
+    -o-animation: JMD 10s ease infinite;
+    animation: JMD 10s ease infinite;
 }
-
-@keyframes AnimationName {
+@-webkit-keyframes JMD {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes JMD {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes JMD {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes JMD {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -211,7 +227,7 @@ body {
 }
 
 #myNav a{
-    font-size: 30px;
+    font-size: 16px;
 }
 
 
@@ -557,7 +573,7 @@ figcaption p {
     display: flex;
 	justify-content: space-around;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     background-color: rgba(105, 102, 113, 0.7);
     opacity: 0.8;
     background-size: cover;
@@ -591,6 +607,7 @@ figcaption p {
 
 .les3v a{
     text-decoration: none;
+    text-align: left;
 }
 
 
@@ -831,6 +848,7 @@ form .message {
 input {
     background-color: #ffffff;
     vertical-align: middle;
+    text-align: left;
     width: 100%;
     padding: 2%;
     height: 2em;
@@ -865,6 +883,8 @@ textarea {
     /*   filter: drop-shadow(0 0 0.75rem #fff);     */
 
 }
+
+
 
 /*    BOUTON SCROLL-UP
 ==============================*/
