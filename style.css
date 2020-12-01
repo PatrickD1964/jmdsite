@@ -1,0 +1,995 @@
+/* JMD SITE WEB  INFORMATIONS
+
+    - JMD site web
+    - Version : 1.0.0
+    - Author: Patrick Delaire
+
+*/
+
+/* COLORS
+
+    - Default Body: #ffffff
+    - H1
+    - H2
+    - H3
+    - Button
+    - Button : Hover
+    - Border
+
+*/
+
+/* FONTS 
+
+    - Default : 
+    - H1
+
+*/
+
+/* CSS DIRECTORY
+
+    1 GLOBAL
+    2 BODY
+    2 HEADER / ACCUEIL      SECTION 1 
+    4          GENESE       SECTION 2
+    5          PRESTATIONS  SECTION 3
+    6          TEMOIGNAGES  SECTION 4
+    7          CONTACT      SECTION 5
+
+
+
+*/
+
+
+
+/* GLOBAL
+===================================================*/
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+
+
+
+html {
+    background-color: #fff;
+
+}
+
+h1 {
+    margin-top: 10%;
+}
+
+h2{
+    margin-top: 5%;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+    color: #fff;
+}
+
+
+P {
+    font-size: 12px;
+    font-family: "FuturaPT", "arial";
+    color: #fff;
+    line-height: 120%;
+}
+
+
+body{ background-color: #652581;      
+}
+
+
+.css-selector {
+    background: linear-gradient(270deg, #652581, #666971);
+    background-size: 400% 400%;
+    animation: AnimationName 9s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+ 
+
+
+/*-- MENU OVERLAY feuille de style css
+    ========================================--*/
+
+body {
+    font-family: 'FuturaPT', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;        
+    top: 0;
+    left: 0;
+    background-color: rgb(69, 66, 71);
+    opacity: 0.9;
+    overflow-y: hidden;
+    transition: 1s;
+    border: thin #fff solid;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #696671;
+}
+
+.overlay a:active {
+    color: #652581;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+#myNav a{
+    font-size: 32px;
+}
+
+
+
+
+/*-- MENU OVERLAY feuille de style css FIN
+    ========================================*/
+
+
+
+/* MODAL
+==================*/
+
+#myModal {
+
+    z-index: 10;
+}
+
+.modal-title {
+    color: #fff;
+}
+
+.modal-content {
+    z-index: 11;
+    color: #fff;
+    font-size: 12px;
+    background-color: #652581;
+
+    border: thin #fff solid;
+}
+
+.modal-footer button {
+    color: #fff;
+    background-color: #696671;
+
+}
+
+.modal-footer button:hover {
+    background-color: #b3b2b2;
+    color: #652581;
+    transition: 0.5s;
+}
+
+
+
+.close {
+    color: #fff;
+}
+
+.close:hover {
+    color: #652581;
+}
+
+
+/*    TOOLTIP
+============================================*/
+
+.genese a span{	
+	display: none;
+    position: absolute;
+	color:#fff;
+	background:rgba(65,25,81,0.70);
+	padding:20px;
+	border-radius:10px;
+    border: thin #fff solid;
+	width:70%;
+    height: auto;
+	text-align:left;
+	position: absolute;
+	z-index:10;
+    margin-top:10px;
+    margin-right: 10%;
+}
+
+.genese  a:hover{
+	text-decoration: none;
+	cursor: help;
+}
+
+.genese a{ 
+    color: #fff;
+	display: inline-block;
+    cursor: pointer;
+    text-decoration: underline;
+
+
+}
+a:hover span{ 
+	display:block; 
+    color: #fff;
+
+  
+}
+
+a:hover{
+    color: #652581;
+    
+}
+
+
+
+
+
+/*    BUTTONS
+============================================*/
+
+.btn {
+    height: auto;
+    display: block;
+    justify-content: center;
+    background-color: #652581;
+    color: #fff;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 30px;
+    border: thin #fff solid;
+    width: 100%;
+
+}
+
+.btn a{
+    color: #fff;
+}
+
+
+.btn:hover {
+    color: #fff;
+    background-color: #b3b2b2;
+    transition: 0.5s;
+    border: thin #fff solid;
+
+}
+
+
+
+
+
+.btngroup {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: #fff;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 20px;
+    width: 100%;
+
+
+}
+
+
+
+/* BUTTON SCROLL ACCUEIL*/
+
+.boutonretour img{
+    z-index: 100;
+    position: fixed;
+    width: 30px;
+    height: auto;
+    bottom: 20px;
+    right: 25px;
+}
+
+.boutonretour:hover img{
+    
+    width: 29px;
+    height: auto;  
+}
+
+.boutonretour:active img{
+    width: 29px;
+    height: auto;
+    background-color: #fff;
+    opacity: 0.8;
+    transition: 0.2;
+    border-radius: 50%;
+}
+
+
+
+
+/*    HEADER BARRE DE NAVIGATION OVERLAY
+============================================= */
+
+header {
+    z-index: 100;
+    position: fixed;
+    background-color: transparent;
+    right: 20px;
+    top: 45px;
+    color: #fff;
+    font-size: 30px;
+
+}
+
+
+
+
+
+
+/*    ACCUEIL SECTION 1
+===========================================*/
+
+
+/*    LOGO
+===========================================*/
+
+logo img {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    padding: 2%;
+    z-index: 100;
+    width: 15%;
+    height: auto;
+}
+
+
+.accueil {
+    background-image: url(jmdimages/industrienb.jpg);
+    background-color: #652581;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+/*  GENESE SECTION 2
+===================================================*/
+/*
+.genese {
+    background-color: #652581;
+    background-position: center;
+    background-size: cover;
+    height: 350vh;  */
+
+}
+
+.imggenese1 {
+    display: inline;
+    background-image: url(jmdimages/nuagedemots/genese1.png);
+    background-blend-mode: overlay;
+    height: 100px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    border: thin #fff solid;
+
+}
+
+.imggenese2 {
+    display: inline;
+    background-image: url(jmdimages/nuagedemots/STRATEGIE.jpg);
+    background-blend-mode: soft-light;
+    height: 100px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 center;
+    background-repeat: no-repeat;
+    border: thin #fff solid;
+
+}
+
+
+
+.col-sm-5-minedecuivre {
+    display: flex;
+    z-index: 4;
+    background-image: url(jmdimages/minedecuivreNB.jpg);
+    background-color: #652581;
+    background-blend-mode: hard-light;
+    height: 300vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 40%;
+    border: thin #fff solid;
+    border-radius: 10px;
+    flex-direction: column;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    margin: 1%;
+    padding: 2%;
+}
+
+
+
+
+.col-sm-5-textegenese {
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+    background-color: rgba(105, 102, 113, 0.8);
+    background-size: cover;
+    width: 40%;
+    height: auto;
+    border: thin #fff solid;
+    border-radius: 10px;
+    padding: 1%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    
+}
+
+figure img {
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 60%;
+    height: auto;
+    display: inline-flex;
+    justify-content: flex-start;
+    border: thin #fff solid;
+    vertical-align: middle;
+    color: #ffffff;
+    font-size: 100%;
+    border: thin #fff solid;
+    border-radius: 5px;
+}
+
+figure .shoki {
+    margin-left: 5%;
+}
+
+.shoki p {
+    font-size: 12px;
+}
+
+figcaption {
+    margin: 5%;
+}
+
+figcaption p {
+    font-size: 14px;
+}
+
+.les3v {
+    z-index: 10;
+    display: flex;
+	justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(105, 102, 113, 0.7);
+    opacity: 0.8;
+    background-size: cover;
+    width: 60%;
+	height: 40%;
+    padding: 5%;
+    margin: 5%;
+    border: thin #fff solid;
+	border-radius:10px;
+    /*  filter: drop-shadow(0 0 0.75rem #fff);   */
+}
+
+.les3v  strong{
+	font-size: 600%;
+	margin: 5%;
+	padding: 5%;
+}
+
+.les3v strong:hover{
+	font-style: italic;
+	cursor: help;
+	border-top: thin #fff solid;
+	
+	
+}
+
+.les3v span{
+	 
+    z-index: 10;
+}
+
+.les3v a{
+    text-decoration: none;
+}
+
+
+/*  PRESTATIONS SECTION 3
+============================================================================================================================== */
+/*
+.prestations {
+    background-color: #652581;
+    background-position: center;
+    background-size: cover;
+    height: 200vh;
+}  */
+
+.col-sm-5-technologie {
+    background-image: url(jmdimages/technologie.jpg);
+    background-color: #652581;
+    background-blend-mode: soft-light;
+    background-position: center;
+    vertical-align: middle;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    border: thin #fff solid;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    width: 40%;
+    height: 150vh;
+    margin: 1%;
+    padding: 2%;
+}
+
+.prestations ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(105, 102, 113, 0.5);
+    background-size: 50%;
+    margin: 2%;
+    padding: 5%;
+    border: thin #fff solid;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    width: 40%;
+    height: 35%;
+}
+
+.prestations li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10%;
+    padding: 2%;
+    background-color: #ffffff;
+    background-size: cover;
+    font-size: 2em;
+    color: #652581;
+    border: thin #652581 solid;
+    border-radius: 5px;
+    vertical-align: middle;
+    width: 120%;
+    height: auto;
+}
+
+.col-sm-5-texteprestations {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 7;
+    background-color: rgba(105, 102, 113, 0.8);
+    background-size: cover;
+    flex-direction: column;
+    border: thin #fff solid;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding: 2%;
+    width: 40%;
+    height: 100%;
+    
+
+}
+
+
+.imgprestations {
+    background-image: url(jmdimages/nuagedemots/prestations.png);
+    background-color: #652581;
+    background-blend-mode: hard-light;
+    height: 100px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+    border: thin #fff solid;
+}
+
+
+
+/* TEMOIGNAGES SECTION 4
+============================================================================================================================== */
+
+.temoignages {
+    background-image: url(jmdimages/chapeaunb.jpg);
+    background-color: #652581;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    height: 200vh;
+}
+
+.col-sm-8-remerciements {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(105, 102, 113, 0.5);
+    background-size: cover;
+    border: thin #fff solid;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    margin: 2%;
+    padding: 2%;
+}
+
+.temoin {
+    justify-content: center;
+    background-color: rgba(105, 102, 113, 0.5);
+    opacity: 0.8;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  /*  border: thin #fff solid; */
+    padding: 2%;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.temoin img {
+    background-color:
+        display: flex;
+    justify-content: center;
+    filter: grayscale(100);
+    border-radius: 100%;
+    padding: 2%;
+    margin: 5%;
+    width: 50%;
+    border: thin #fff solid;  
+}
+
+
+
+.temoin p {
+    font-size: 12px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 2%;
+}
+
+.display {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    border-bottom: thin #fff solid;		
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+}
+
+.jombotron{
+	background-color:  rgba(105, 102, 113, 0.5);
+	border-radius: 10px;
+	border: thin #fff solid;		
+	padding: 2%;
+	height: 100%;
+}
+
+
+
+
+/* CONTACT / FORMULAIRE SECTION 5
+============================================================================================================================== */
+
+
+
+.contact {
+
+    background-image: url(jmdimages/poigneedemainsnb.jpg);
+    background-color: #652581;
+    background-blend-mode: soft-light;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vhvh;
+}
+
+
+
+
+.contact p {
+
+    margin: 0 auto;
+    padding: 2%;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.contact p strong {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+:required {
+    background-color: #ffffff;
+    width: 100%;
+    color: #696671;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    column-count: 2;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    margin: 5%;
+
+}
+
+form .message {
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+    margin: 5%;
+}
+
+input {
+    background-color: #ffffff;
+    vertical-align: middle;
+    width: 100%;
+    padding: 2%;
+    height: 2em;
+    border-radius: 10px;
+    border: 2px #696671 solid;
+    /*   filter: drop-shadow(0 0 0.75rem #fff);   */
+}
+
+select {
+    background-color: #ffffff;
+    vertical-align: middle;
+    width: 100%;
+    padding: 2%;
+    height: 2em;
+    border-radius: 10px;
+    border: 2px #696671 solid;
+    /*   filter: drop-shadow(0 0 0.75rem #fff);     */
+}
+
+
+textarea {
+    display: flex;
+    justify-content: left;
+    background-color: #fff;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    padding: 2%;
+    resize: vertical;
+    border-radius: 10px;
+    border: 2px #696671 solid;
+    /*   filter: drop-shadow(0 0 0.75rem #fff);     */
+
+}
+
+/*    BOUTON SCROLL-UP
+==============================*/
+
+
+
+
+
+
+/* FOOTER SECTION 6
+====================================================================================== */
+
+
+
+footer #button {
+  /*  background-color: #b3b2b2;   */
+    width: 30px;
+    height: 30px;
+ /*   border: #fff 3px solid;        */
+    border-radius: 35px;
+    margin: 0 auto;
+    position: relative;
+    transition: all 1s ease;
+    color: #fff;
+    
+}
+
+footer #button:hover {
+
+    width: 35px;
+    height: 35px;
+    /*	border: #b3b2b2 4px solid;
+    transition: all 1s ease;
+	position:relative;    */
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 2em;
+    overflow: hidden;
+    margin: 0 auto;
+    transition: all 1s ease;
+    z-index: 10;
+}
+
+footer:hover {
+
+    transition: all 1s ease;
+    height: 15em;
+    filter: drop-shadow(0 0 0.75rem #fff);
+}
+
+footer #container {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: rgb(69, 66, 71);
+    opacity: 0.9;
+    border: thin #fff solid;
+
+
+
+}
+
+footer .row {
+    margin-top: 10px;
+    justify-content: flex-start;
+}
+
+footer .col {
+    margin-top: 10px;
+}
+
+footer ul {
+    margin-top: 10px;
+    list-style-type: none;
+
+}
+
+footer a {
+    font-size: 10px;
+    font-weight: lighter;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+footer ul p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+footer .col {
+    width: 100%;
+}
+
+.col a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.col p {
+    font-size: 12px;
+}
+
+.adress {
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+footer a:hover{
+    color: #b3b2b2;
+}
+
+footer a:active{
+    color: #652581;
+    transition: 0.5s;
+}
+
+.col-sm-3-cgu a{
+    font-weight: bold;
+}
+
+.plan{
+    font-weight: bold;
+}
