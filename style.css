@@ -573,7 +573,7 @@ figcaption p {
     display: flex;
 	justify-content: space-around;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     background-color: rgba(105, 102, 113, 0.7);
     opacity: 0.8;
     background-size: cover;
