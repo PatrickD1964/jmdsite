@@ -464,7 +464,7 @@ logo img {
     background-color: transparent;
     background-position: center;
     background-size: cover;
-    height: 450vh;  
+    height: 350vh;  
 
 }
 
@@ -502,7 +502,7 @@ logo img {
     background-image: url(jmdimages/minedecuivreNB.jpg);
     background-color: #652581;
     background-blend-mode: hard-light;
-    height: 400vh;
+    height: 300vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
