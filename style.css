@@ -541,7 +541,7 @@ figure img {
     margin-top: 5%;
     margin-left: 5%;
     width: 60%;
-    height: auto;
+    height: 80%;
     display: inline-flex;
     justify-content: flex-start;
     border: thin #fff solid;
