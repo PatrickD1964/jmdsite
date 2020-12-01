@@ -172,11 +172,15 @@ body {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #696671;
+    color: #652581;
+    background-color: #fff;
+    opacity: 0.5;
 }
 
 .overlay a:active {
-    color: #652581;
+    color: #b3b2b2;
+    transition: 1s;
+    opacity: 1;
 }
 
 .overlay .closebtn {
@@ -202,8 +206,12 @@ body {
     }
 }
 
+.overlay .closebtn:hover{
+    background-color: transparent;
+}
+
 #myNav a{
-    font-size: 32px;
+    font-size: 16px;
 }
 
 
