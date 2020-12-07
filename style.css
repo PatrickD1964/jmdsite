@@ -163,7 +163,7 @@ body {
     background-color: rgb(69, 66, 71);
     opacity: 0.9;
     overflow-y: hidden;
-    transition: 1s;
+    transition: 0.3s;
     border: thin #fff solid;
 }
 
@@ -195,7 +195,7 @@ body {
 
 .overlay a:active {
     color: #b3b2b2;
-    transition: 1s;
+    transition: 0.5s;
     opacity: 1;
 }
 
@@ -229,6 +229,8 @@ body {
 #myNav a{
     font-size: 16px;
 }
+
+
 
 
 
@@ -464,7 +466,7 @@ logo img {
     background-color: transparent;
     background-position: center;
     background-size: cover;
-    height: 350vh;  
+    height: 450vh;  
 
 }
 
@@ -478,12 +480,13 @@ logo img {
     background-position: 0 center;
     background-repeat: no-repeat;
     border: thin #fff solid;
+    border-radius: 10px;
 
 }
 
 .imggenese2 {
     display: inline;
-    background-image: url(jmdimages/nuagedemots/STRATEGIE.jpg);
+    background-image: url(jmdimages/nuagedemots/contact.png);
     background-blend-mode: soft-light;
     height: 100px;
     background-attachment: fixed;
@@ -491,6 +494,7 @@ logo img {
     background-position: 0 center;
     background-repeat: no-repeat;
     border: thin #fff solid;
+    border-radius: 10px;
 
 }
 
@@ -502,7 +506,7 @@ logo img {
     background-image: url(jmdimages/minedecuivreNB.jpg);
     background-color: #652581;
     background-blend-mode: hard-light;
-    height: 300vh;
+    height: 400vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -526,7 +530,7 @@ logo img {
     background-color: rgba(105, 102, 113, 0.8);
     background-size: cover;
     width: 40%;
-    height: auto;
+    height: 80%;
     border: thin #fff solid;
     border-radius: 10px;
     padding: 1%;
@@ -541,7 +545,7 @@ figure img {
     margin-top: 5%;
     margin-left: 5%;
     width: 60%;
-    height: 80%;
+    height: auto;
     display: inline-flex;
     justify-content: flex-start;
     border: thin #fff solid;
@@ -557,7 +561,7 @@ figure .shoki {
 }
 
 .shoki p {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 figcaption {
@@ -565,7 +569,7 @@ figcaption {
 }
 
 figcaption p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .les3v {
@@ -573,7 +577,7 @@ figcaption p {
     display: flex;
 	justify-content: space-around;
     flex-direction: column;
-    text-align: center;
+    text-align: left;
     background-color: rgba(105, 102, 113, 0.7);
     opacity: 0.8;
     background-size: cover;
@@ -608,6 +612,18 @@ figcaption p {
 .les3v a{
     text-decoration: none;
     text-align: left;
+  font-size: 10px;
+}
+
+.video{
+    justify-content: center;
+}
+iframe{
+    justify-content: center;
+    border-radius: 50%;
+    border: thin #fff solid;
+    justify-content: center;
+    margin: 25%;
 }
 
 
@@ -699,6 +715,7 @@ figcaption p {
     background-size: cover;
     background-position: right;
     border: thin #fff solid;
+    border-radius: 10px;
 }
 
 
@@ -713,7 +730,8 @@ figcaption p {
     background-position: center;
     background-size: cover;
     height: 200vh;
-}
+    
+}   
 
 .col-sm-8-remerciements {
     display: flex;
@@ -790,87 +808,61 @@ figcaption p {
 
 
 .contact {
-
     background-image: url(jmdimages/poigneedemainsnb.jpg);
     background-color: #652581;
     background-blend-mode: soft-light;
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100vhvh;
+    height: 150vh;
 }
 
 
 
 
 .contact p {
-
     margin: 0 auto;
-    padding: 2%;
+    padding: 5%;
     display: flex;
     justify-content: left;
     position: relative;
     width: 100%;
     height: auto;
+
 }
 
-.contact p strong {
-    text-decoration: underline;
-    font-size: 1.2em;
-}
 
-:required {
-    background-color: #ffffff;
+input{
+    background-color: #fff;
+    border-radius: 10px;  
     width: 100%;
+    justify-content: center;
     color: #696671;
 }
 
+.input-group{
+    margin-top: 10%;
+    color: #696671;
+}
 
 form {
     display: flex;
     flex-direction: column;
     column-count: 2;
-    justify-content: flex-start;
+
     position: relative;
     width: 100%;
-    margin: 5%;
-
+    align-content: flex-start;
 }
 
-form .message {
-    display: flex;
-    justify-content: flex-start;
-    color: #ffffff;
-    margin: 5%;
+select:hover{
+  background-color: #b3b2b2;
+    color: #fff;
 }
-
-input {
-    background-color: #ffffff;
-    vertical-align: middle;
-    text-align: left;
-    width: 100%;
-    padding: 2%;
-    height: 2em;
-    border-radius: 10px;
-    border: 2px #696671 solid;
-    /*   filter: drop-shadow(0 0 0.75rem #fff);   */
-}
-
-select {
-    background-color: #ffffff;
-    vertical-align: middle;
-    width: 100%;
-    padding: 2%;
-    height: 2em;
-    border-radius: 10px;
-    border: 2px #696671 solid;
-    /*   filter: drop-shadow(0 0 0.75rem #fff);     */
-}
-
 
 textarea {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     background-color: #fff;
     background-size: cover;
     width: 100%;
@@ -878,33 +870,19 @@ textarea {
     padding: 2%;
     resize: vertical;
     border-radius: 10px;
-    border: 2px #696671 solid;
-    /*   filter: drop-shadow(0 0 0.75rem #fff);     */
+    border-bottom: 2px #696671 solid;
 
 }        
-
-
-    
-
-
-/*    BOUTON SCROLL-UP
-==============================*/
-
-
-
 
 
 
 /* FOOTER SECTION 6
 ====================================================================================== */
 
-
-
 footer #button {
   /*  background-color: #b3b2b2;   */
     width: 30px;
     height: 30px;
- /*   border: #fff 3px solid;        */
     border-radius: 35px;
     margin: 0 auto;
     position: relative;
