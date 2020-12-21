@@ -405,12 +405,13 @@ logo img {
     background-blend-mode: overlay;
     height: 100px;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 130%;
     background-position: 0 center;
     background-repeat: no-repeat;
     border: thin #fff solid;
     border-radius: 10px;
     filter: drop-shadow(0 0 0.75rem #000);
+    
 
 }
 
@@ -420,7 +421,7 @@ logo img {
     background-blend-mode: soft-light;
     height: 100px;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 130%;
     background-position: 0 center;
     background-repeat: no-repeat;
     border: thin #fff solid;
@@ -456,6 +457,7 @@ logo img {
     width: 45%;
     height: 100%;
     padding: 2%; 
+    margin-top: 20%;
   
 }
 
@@ -476,7 +478,7 @@ figure .shoki {
 }
 
 .shoki p {
-    font-size: 10px;
+    font-size: 12px;
        filter: drop-shadow(0 0 0.75rem #000);
 }
 
@@ -485,7 +487,7 @@ figcaption {
 }
 
 figcaption p {
-    font-size: 12px;
+    font-size: 16px;
        filter: drop-shadow(0 0 0.75rem #000);
 }
 
@@ -496,7 +498,7 @@ figcaption p {
     flex-direction: column;
     text-align: left;
     background-color: transparent;
-    opacity: 0.8;
+    opacity: 1;
     background-size: cover;
     width: 100%;
 	height: auto;
@@ -508,6 +510,9 @@ figcaption p {
 }
 
 
+.les3v p{
+    font-size: 20px;
+}
 
 .les3v  strong{
 	font-size: 1000%;
@@ -631,8 +636,8 @@ figcaption p {
     background-blend-mode: hard-light;
     height: 100px;
     background-attachment: fixed;
-    background-size: cover;
-    background-position: right;
+    background-size: 130%;
+    background-position: 0 center;
     border: thin #fff solid;
     border-radius: 10px;
 }
