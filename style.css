@@ -213,7 +213,7 @@ body{ background-color: #652581;
 	padding:20px;
 	border-radius:10px;
     border: thin #fff solid;
-	width:70%;
+	width: 70%;
     height: auto;
 	text-align:left;
 	position: absolute;
@@ -394,6 +394,7 @@ logo img {
 
 .genese h5{
     text-align: left;
+   filter: drop-shadow(0 0 0.75rem #000);    
 }
 
 
@@ -476,6 +477,7 @@ figure .shoki {
 
 .shoki p {
     font-size: 10px;
+       filter: drop-shadow(0 0 0.75rem #000);
 }
 
 figcaption {
@@ -484,6 +486,7 @@ figcaption {
 
 figcaption p {
     font-size: 12px;
+       filter: drop-shadow(0 0 0.75rem #000);
 }
 
 .les3v {
@@ -499,7 +502,7 @@ figcaption p {
 	height: auto;
     padding: 5%;
     filter: drop-shadow(0 0 0.75rem #000);
-    margin: 5%;
+    margin: 5%
   	
      
 }
@@ -508,7 +511,7 @@ figcaption p {
 
 .les3v  strong{
 	font-size: 1000%;
-	margin: 5%;
+	margin-top:  25%;
 	padding: 5%;
 }
 
@@ -521,7 +524,6 @@ figcaption p {
 }
 
 .les3v span{
-	 
     z-index: 10;
     width: 100%;
 }
@@ -530,7 +532,7 @@ figcaption p {
     text-decoration: none;
     text-align: left;
   	font-size: 14px;
-	margin-top: 15%;
+	margin-top: 30%;
     width: 100%;
 }
 
@@ -570,11 +572,10 @@ figcaption p {
     border: thin #fff solid;
     border-radius: 10px;
     filter: drop-shadow(0 0 0.75rem #000);
-    width: 20%;
+    width: 25%;
     height: auto;
+    border-left: thin #fff solid;
 }
-
-
 
 .prestations ul {
     z-index: 10;
@@ -582,7 +583,7 @@ figcaption p {
     display: inline-flex;
     justify-content: center;
     background-size: 100%;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 2%;
     padding: 5%;
@@ -612,17 +613,16 @@ figcaption p {
     display: inline-flex;
     justify-content: space-between;
     z-index: 10;
-/*   background-color: rgba(105, 102, 113, 0.8); */
     background-size: cover;
     flex-direction: column;
-  /*  border: thin #fff solid;    */
-    border-radius: 10px;
-/*    filter: drop-shadow(0 0 0.75rem #fff);  */
     margin-left: 10%;
-    padding: 5%;
-    width: 45%;
+    padding: 3%;
+    width: 50%;
     height: auto;
-}
+    border-left: thin #fff solid;
+    }
+
+
 
 
 .imgprestations {
@@ -652,10 +652,10 @@ figcaption p {
 .col-remerciements {
     display: flex;
     justify-content: center;
-    background-color: rgba(105, 102, 113, 0.5);
+   /* background-color: rgba(105, 102, 113, 0.5);
     background-size: cover;
     border: thin #fff solid;
-    border-radius: 10px;
+    border-radius: 10px; */
     filter: drop-shadow(0 0 0.75rem #000);
     margin: 2%;
     padding: 2%;
@@ -732,7 +732,7 @@ figcaption p {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 200vh;
+    height: auto;
 	border: thin #fff solid;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -750,18 +750,17 @@ figcaption p {
     position: relative;
     width: 100%;
     height: auto;
-
 }
 
 
 label{
-    height: 2em;
+    height: 1em;
     border-color: aqua;
 }
 
 
 input{
-    height: 100%;
+    height: 2em;
     background-color: #fff;
     border-radius: 10px;  
     width: 100%;
@@ -771,10 +770,14 @@ input{
 }
 
 .input-group{
-    height: 100%;
+    height: 2em;
     width: 100%;
     color: #696671;
     border-radius: 10px;
+    padding: 5%;
+    margin-top: 5%;
+    justify-content: flex-start;
+    vertical-align: middle;
 }
 
 form {
@@ -784,7 +787,6 @@ form {
     column-count: 2;
     width: 100%;
     position: relative;
-    width: 100%;
 }
 
 select:hover{
