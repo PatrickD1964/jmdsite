@@ -115,6 +115,7 @@ P {
 
 body{ background-color: #652581;  
     background-size: cover;
+    height: auto;
 }        
 
 .css-selector {
@@ -332,14 +333,17 @@ a:hover{
 /*    HEADER BARRE DE NAVIGATION OVERLAY
 ============================================= */
 
-header {
+.navbar-header{
+    z-index: 101;
+    position: fixed;
+}
+
+.navbar-navbar-default{
     z-index: 100;
     position: fixed;
-    background-color: transparent;
-    right: 20px;
+    background-color:aqua;
     top: 45px;
-    color: #fff;
-    font-size: 30px;
+    right: 20px;
 
 }
 
@@ -359,6 +363,7 @@ logo img {
     display: flex;
     justify-content: center;
     position: fixed;
+    margin-top: 2%;
     padding: 2%;
     z-index: 100;
     width: 15%;
@@ -478,7 +483,7 @@ figure .shoki {
 }
 
 .shoki p {
-    font-size: 12px;
+    font-size: 10px;
        filter: drop-shadow(0 0 0.75rem #000);
 }
 
@@ -487,7 +492,7 @@ figcaption {
 }
 
 figcaption p {
-    font-size: 16px;
+    font-size: 14px;
        filter: drop-shadow(0 0 0.75rem #000);
 }
 
