@@ -84,23 +84,21 @@ html {
 
 h1 {
     margin-top: 10%;
-    
 }
 
 h2{
-    margin-top: 10%;
-    margin-bottom: 10%;
-    word-spacing: 3em;
-}
-h4{
-    color: #fff;
-    text-align: center;
-    width:100%;
+    margin-top: 5%;
 }
 
 
 
-h1, h2, h3, h4, h5, h6, h7 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
     color: #fff;
 }
 
@@ -112,11 +110,9 @@ P {
     line-height: 120%;
 }
 
-
-body{ background-color: #652581;  
-    background-size: cover;
-    height: auto;
-}        
+/*
+body{ background-color: #652581;      
+}        */
 
 .css-selector {
     background: linear-gradient(270deg, #652581, #b3b2b2);
@@ -153,6 +149,86 @@ body{ background-color: #652581;
 /*-- MENU OVERLAY feuille de style css
     ========================================--*/
 
+body {
+    font-family: 'FuturaPT', sans-serif;
+}
+
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;        
+    top: 0;
+    left: 0;
+    background-color: rgb(69, 66, 71);
+    opacity: 0.9;
+    overflow-y: hidden;
+    transition: 0.3s;
+    border: thin #fff solid;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #652581;
+    background-color: #fff;
+    opacity: 0.3 ease;
+}
+
+.overlay a:active {
+    color: #b3b2b2;
+    transition: 0.5s ease;
+    opacity: 1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.overlay .closebtn:hover{
+    background-color: transparent;
+}
+
+#myNav a{
+    font-size: 16px;
+}
 
 /*-- MENU OVERLAY feuille de style css FIN
     ========================================*/
@@ -214,7 +290,7 @@ body{ background-color: #652581;
 	padding:20px;
 	border-radius:10px;
     border: thin #fff solid;
-	width: 70%;
+	width:70%;
     height: auto;
 	text-align:left;
 	position: absolute;
@@ -306,7 +382,7 @@ a:hover{
 .boutonretour img{
     z-index: 100;
     position: fixed;
-    width: 40px;
+    width: 30px;
     height: auto;
     bottom: 20px;
     right: 25px;
@@ -314,12 +390,12 @@ a:hover{
 
 .boutonretour:hover img{
     
-    width: 40px;
+    width: 29px;
     height: auto;  
 }
 
 .boutonretour:active img{
-    width: 40px;
+    width: 29px;
     height: auto;
     background-color: #fff;
     opacity: 0.8;
@@ -333,17 +409,14 @@ a:hover{
 /*    HEADER BARRE DE NAVIGATION OVERLAY
 ============================================= */
 
-.navbar-header{
-    z-index: 101;
-    position: fixed;
-}
-
-.navbar-navbar-default{
+header {
     z-index: 100;
     position: fixed;
-    background-color:aqua;
-    top: 45px;
+    background-color: transparent;
     right: 20px;
+    top: 45px;
+    color: #fff;
+    font-size: 30px;
 
 }
 
@@ -363,7 +436,6 @@ logo img {
     display: flex;
     justify-content: center;
     position: fixed;
-    margin-top: 2%;
     padding: 2%;
     z-index: 100;
     width: 15%;
@@ -377,11 +449,6 @@ logo img {
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
-	border: thin #fff solid;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #000);
-    height: auto;
 
 }
 
@@ -392,99 +459,104 @@ logo img {
 
 .genese {
     background-color: transparent;
-    width: 100%;
-    height: auto;
-    
+    background-position: center;
+    background-size: cover;
+    height: 450vh;  
+
 }
-
-.genese h5{
-    text-align: left;
-   filter: drop-shadow(0 0 0.75rem #000);    
-}
-
-
 
 .imggenese1 {
-    display: inline-flex;
+    display: inline;
     background-image: url(jmdimages/nuagedemots/genese1.png);
     background-blend-mode: overlay;
     height: 100px;
     background-attachment: fixed;
-    background-size: 130%;
+    background-size: cover;
     background-position: 0 center;
     background-repeat: no-repeat;
     border: thin #fff solid;
     border-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #000);
-    
 
 }
 
 .imggenese2 {
-    display: inline-flex;
+    display: inline;
     background-image: url(jmdimages/nuagedemots/contact.png);
     background-blend-mode: soft-light;
     height: 100px;
     background-attachment: fixed;
-    background-size: 130%;
+    background-size: cover;
     background-position: 0 center;
     background-repeat: no-repeat;
     border: thin #fff solid;
     border-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #000);
 
-}     
+}
 
 
 
 .col-sm-5-minedecuivre {
-    display: inline-flex;
-	justify-content: center;
-    z-index: 5;
-    background-color: transparent;
-    height: auto;
+    display: flex;
+    z-index: 4;
+    background-image: url(jmdimages/minedecuivreNB.jpg);
+    background-color: #652581;
+    background-blend-mode: hard-light;
+    height: 400vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    justify-content: center;
     width: 40%;
-    border-right: thin #fff solid;
+    border: thin #fff solid;
+    border-radius: 10px;
     flex-direction: column;
-    filter: drop-shadow(0 0 0.75rem #000);
-    padding: 2%;
+    filter: drop-shadow(0 0 0.75rem #fff);
     margin: 1%;
-}			
+    padding: 2%;
+}
+
+
+
 
 .col-sm-5-textegenese {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
-    z-index: 5;
-    width: 45%;
-    height: 100%;
-    padding: 2%; 
-    margin-top: 20%;
-  
+    z-index: 4;
+    background-color: rgba(105, 102, 113, 0.8);
+    background-size: cover;
+    width: 40%;
+    height: 80%;
+    border: thin #fff solid;
+    border-radius: 10px;
+    padding: 1%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    
 }
 
 figure img {
     position: relative;
-    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 60%;
     height: auto;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: flex-start;
     border: thin #fff solid;
     vertical-align: middle;
+    color: #ffffff;
+    font-size: 100%;
     border: thin #fff solid;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 figure .shoki {
-    padding: 2%;
+    margin-left: 5%;
 }
 
 .shoki p {
     font-size: 10px;
-       filter: drop-shadow(0 0 0.75rem #000);
 }
 
 figcaption {
@@ -492,36 +564,30 @@ figcaption {
 }
 
 figcaption p {
-    font-size: 14px;
-       filter: drop-shadow(0 0 0.75rem #000);
+    font-size: 12px;
 }
 
 .les3v {
     z-index: 10;
-    display: block;
-	justify-content: center;
+    display: flex;
+	justify-content: space-around;
     flex-direction: column;
     text-align: left;
-    background-color: transparent;
-    opacity: 1;
+    background-color: rgba(105, 102, 113, 0.7);
+    opacity: 0.8;
     background-size: cover;
-    width: 100%;
-	height: auto;
+    width: 60%;
+	height: 40%;
     padding: 5%;
-    filter: drop-shadow(0 0 0.75rem #000);
-    margin: 5%
-  	
-     
-}
-
-
-.les3v p{
-    font-size: 20px;
+    margin: 5%;
+    border: thin #fff solid;
+	border-radius:10px;
+    /*  filter: drop-shadow(0 0 0.75rem #fff);   */
 }
 
 .les3v  strong{
-	font-size: 1000%;
-	margin-top:  25%;
+	font-size: 600%;
+	margin: 5%;
 	padding: 5%;
 }
 
@@ -534,41 +600,37 @@ figcaption p {
 }
 
 .les3v span{
+	 
     z-index: 10;
-    width: 100%;
 }
 
 .les3v a{
     text-decoration: none;
     text-align: left;
-  	font-size: 14px;
-	margin-top: 30%;
-    width: 100%;
+  font-size: 10px;
 }
 
-
+.video{
+    justify-content: center;
+}
+iframe{
+    justify-content: center;
+    border-radius: 50%;
+    border: thin #fff solid;
+    justify-content: center;
+    margin: 25%;
+}
 
 
 /*  PRESTATIONS SECTION 3
 ============================================================================================================================== */
 
 .prestations {
-    background-color: transparent; 
-    height: auto;
-    
-    
-    
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    height: 300vh;
 }  
-
-.prestations h5 {
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    filter: drop-shadow(0 0 0.75rem #000);
-    margin-top: 5%;
-    padding: 2%;
-    
-}
 
 .col-sm-5-technologie {
     background-image: url(jmdimages/technologie.jpg);
@@ -577,62 +639,66 @@ figcaption p {
     background-position: center;
     vertical-align: middle;
     background-size: cover;
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
     border: thin #fff solid;
     border-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #000);
-    width: 25%;
-    height: auto;
-    border-left: thin #fff solid;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    width: 40%;
+    height: 250vh;
+    margin: 1%;
+    padding: 2%;
 }
 
 .prestations ul {
-    z-index: 10;
     list-style: none;
-    display: inline-flex;
-    justify-content: center;
-    background-size: 100%;
-    width: 80%;
-    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(105, 102, 113, 0.5);
+    background-size: 50%;
     margin: 2%;
     padding: 5%;
-  
-}				
+    border: thin #fff solid;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    width: 40%;
+    height: 35%;
+}
 
 .prestations li {
     display: flex;
-    justify-content: flex-start;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
     margin: 10%;
-    padding: 10%;
+    padding: 2%;
     background-color: #ffffff;
-    background-size: contain;
-    font-size: 1.5em;
+    background-size: cover;
+    font-size: 2em;
     color: #652581;
-    border: thin #b3b2b2 solid;
+    border: thin #652581 solid;
     border-radius: 5px;
     vertical-align: middle;
-    width: 150%;
+    width: 120%;
     height: auto;
-    text-align: center;
-	
 }
 
 .col-sm-5-texteprestations {
-    display: inline-flex;
-    justify-content: space-between;
-    z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 7;
+    background-color: rgba(105, 102, 113, 0.8);
     background-size: cover;
     flex-direction: column;
-    margin-left: 10%;
-    padding: 3%;
-    width: 50%;
-    height: auto;
-    border-left: thin #fff solid;
-    }
+    border: thin #fff solid;
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #fff);
+    margin-top: 10%;
+    padding: 2%;
+    width: 40%;
+    height: 100%;
+    
 
-
+}
 
 
 .imgprestations {
@@ -641,8 +707,8 @@ figcaption p {
     background-blend-mode: hard-light;
     height: 100px;
     background-attachment: fixed;
-    background-size: 130%;
-    background-position: 0 center;
+    background-size: cover;
+    background-position: right;
     border: thin #fff solid;
     border-radius: 10px;
 }
@@ -653,26 +719,26 @@ figcaption p {
 ============================================================================================================================== */
 
 .temoignages {
-     background-color: transparent;
+    background-image: url(jmdimages/chapeaunb.jpg);
+    background-color: #652581;
+    background-blend-mode: soft-light;
+    background-position: center;
     background-size: cover;
-    height: auto;
+    height: 200vh;
     
 }   
 
-.col-remerciements {
+.col-sm-8-remerciements {
     display: flex;
     justify-content: center;
-   /* background-color: rgba(105, 102, 113, 0.5);
+    background-color: rgba(105, 102, 113, 0.5);
     background-size: cover;
     border: thin #fff solid;
-    border-radius: 10px; */
-    filter: drop-shadow(0 0 0.75rem #000);
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #fff);
     margin: 2%;
     padding: 2%;
 }
-
-
-
 
 .temoin {
     justify-content: center;
@@ -681,6 +747,7 @@ figcaption p {
     background-size: cover;
     display: flex;
     justify-content: center;
+  /*  border: thin #fff solid; */
     padding: 2%;
     margin: 2%;
     border-radius: 10px;
@@ -688,7 +755,7 @@ figcaption p {
 
 .temoin img {
     background-color:
-    display: flex;
+        display: flex;
     justify-content: center;
     filter: grayscale(100);
     border-radius: 100%;
@@ -742,11 +809,7 @@ figcaption p {
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: auto;
-	border: thin #fff solid;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #000);
+    height: 150vh;
 }
 
 
@@ -760,43 +823,31 @@ figcaption p {
     position: relative;
     width: 100%;
     height: auto;
-}
 
-
-label{
-    height: 1em;
-    border-color: aqua;
 }
 
 
 input{
-    height: 2em;
     background-color: #fff;
     border-radius: 10px;  
     width: 100%;
     justify-content: center;
     color: #696671;
-    padding: 5%;
 }
 
 .input-group{
-    height: 2em;
-    width: 100%;
+    margin-top: 10%;
     color: #696671;
-    border-radius: 10px;
-    padding: 5%;
-    margin-top: 5%;
-    justify-content: flex-start;
-    vertical-align: middle;
 }
 
 form {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     column-count: 2;
-    width: 100%;
+
     position: relative;
+    width: 100%;
+    align-content: flex-start;
 }
 
 select:hover{
@@ -811,7 +862,7 @@ textarea {
     background-size: cover;
     width: 100%;
     position: relative;
-    padding: 5%;
+    padding: 2%;
     resize: vertical;
     border-radius: 10px;
     border-bottom: 2px #696671 solid;
