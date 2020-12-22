@@ -86,9 +86,18 @@ h1 {
     margin-top: 10%;
 }
 
-h2{
-    margin-top: 5%;
+h2 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    word-spacing: 3em;
 }
+
+h4 {
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
 
 
 
@@ -380,7 +389,7 @@ a:hover{
 /* BUTTON SCROLL ACCUEIL*/
 
 .boutonretour img{
-    z-index: 100;
+    z-index: 200;
     position: fixed;
     width: 30px;
     height: auto;
@@ -449,6 +458,10 @@ logo img {
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border: thin #fff solid;
+    
 
 }
 
@@ -459,104 +472,98 @@ logo img {
 
 .genese {
     background-color: transparent;
-    background-position: center;
-    background-size: cover;
-    height: 450vh;  
+    width: 100%;
+    height: auto;
 
 }
 
+.genese h5 {
+    text-align: left;
+    filter: drop-shadow(0 0 0.75rem #000);
+}
+
+
+
 .imggenese1 {
-    display: inline;
+    display: inline-flex;
     background-image: url(jmdimages/nuagedemots/genese1.png);
     background-blend-mode: overlay;
     height: 100px;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 130%;
     background-position: 0 center;
     background-repeat: no-repeat;
     border: thin #fff solid;
     border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #000);
+
 
 }
 
 .imggenese2 {
-    display: inline;
+    display: inline-flex;
     background-image: url(jmdimages/nuagedemots/contact.png);
     background-blend-mode: soft-light;
     height: 100px;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 130%;
     background-position: 0 center;
     background-repeat: no-repeat;
     border: thin #fff solid;
     border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem #000);
 
 }
 
 
 
 .col-sm-5-minedecuivre {
-    display: flex;
-    z-index: 4;
-    background-image: url(jmdimages/minedecuivreNB.jpg);
-    background-color: #652581;
-    background-blend-mode: hard-light;
-    height: 400vh;
+    display: inline-flex;
+    justify-content: center;
+    z-index: 5;
+    background-color: transparent;
+    height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    justify-content: center;
     width: 40%;
-    border: thin #fff solid;
-    border-radius: 10px;
+    border-right: thin #fff solid;
     flex-direction: column;
-    filter: drop-shadow(0 0 0.75rem #fff);
-    margin: 1%;
+    filter: drop-shadow(0 0 0.75rem #000);
     padding: 2%;
+    margin: 1%;
 }
 
-
-
-
 .col-sm-5-textegenese {
-    display: flex;
+    display: inline-flex;
+    justify-content: center;
     flex-direction: column;
-    z-index: 4;
-    background-color: rgba(105, 102, 113, 0.8);
-    background-size: cover;
-    width: 40%;
-    height: 80%;
-    border: thin #fff solid;
-    border-radius: 10px;
-    padding: 1%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    filter: drop-shadow(0 0 0.75rem #fff);
-    
+    z-index: 5;
+    width: 45%;
+    height: 100%;
+    padding: 2%;
+    margin-top: 20%;
+
 }
 
 figure img {
     position: relative;
-    margin-top: 5%;
-    margin-left: 5%;
-    width: 60%;
+    width: 100%;
     height: auto;
-    display: inline-flex;
-    justify-content: flex-start;
+    display: flex;
+    justify-content: center;
     border: thin #fff solid;
     vertical-align: middle;
-    color: #ffffff;
-    font-size: 100%;
-    border: thin #fff solid;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 figure .shoki {
-    margin-left: 5%;
+    padding: 2%;
 }
 
 .shoki p {
     font-size: 10px;
+    filter: drop-shadow(0 0 0.75rem #000);
 }
 
 figcaption {
@@ -564,62 +571,59 @@ figcaption {
 }
 
 figcaption p {
-    font-size: 12px;
+    font-size: 14px;
+    filter: drop-shadow(0 0 0.75rem #000);
 }
 
 .les3v {
     z-index: 10;
-    display: flex;
-	justify-content: space-around;
+    display: block;
+    justify-content: center;
     flex-direction: column;
     text-align: left;
-    background-color: rgba(105, 102, 113, 0.7);
-    opacity: 0.8;
+    background-color: transparent;
+    opacity: 1;
     background-size: cover;
-    width: 60%;
-	height: 40%;
+    width: 100%;
+    height: auto;
     padding: 5%;
-    margin: 5%;
-    border: thin #fff solid;
-	border-radius:10px;
-    /*  filter: drop-shadow(0 0 0.75rem #fff);   */
+    filter: drop-shadow(0 0 0.75rem #000);
+    margin: 5%
 }
 
-.les3v  strong{
-	font-size: 600%;
-	margin: 5%;
-	padding: 5%;
+
+.les3v p {
+    font-size: 20px;
 }
 
-.les3v strong:hover{
-	font-style: italic;
-	cursor: help;
-	border-top: thin #fff solid;
-	
-	
+.les3v strong {
+    font-size: 700%;
+    margin-top: 25%;
+    padding: 5%;
 }
 
-.les3v span{
-	 
+.les3v strong:hover {
+    font-style: italic;
+    cursor: help;
+    border-top: thin #fff solid;
+
+
+}
+
+.les3v span {
     z-index: 10;
+    width: 100%;
 }
 
-.les3v a{
+.les3v a {
     text-decoration: none;
     text-align: left;
-  font-size: 10px;
+    font-size: 14px;
+    margin-top: 30%;
+    width: 100%;
 }
 
-.video{
-    justify-content: center;
-}
-iframe{
-    justify-content: center;
-    border-radius: 50%;
-    border: thin #fff solid;
-    justify-content: center;
-    margin: 25%;
-}
+
 
 
 /*  PRESTATIONS SECTION 3
@@ -627,10 +631,21 @@ iframe{
 
 .prestations {
     background-color: transparent;
-    background-position: center;
-    background-size: cover;
-    height: 300vh;
-}  
+    height: auto;
+
+
+
+}
+
+.prestations h5 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.75rem #000);
+    margin-top: 5%;
+    padding: 2%;
+
+}
 
 .col-sm-5-technologie {
     background-image: url(jmdimages/technologie.jpg);
@@ -639,66 +654,62 @@ iframe{
     background-position: center;
     vertical-align: middle;
     background-size: cover;
-    display: flex;
-    justify-content: flex-start;
+    display: inline-flex;
+    justify-content: center;
     border: thin #fff solid;
     border-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #fff);
-    width: 40%;
-    height: 250vh;
-    margin: 1%;
-    padding: 2%;
+    filter: drop-shadow(0 0 0.75rem #000);
+    width: 25%;
+    height: auto;
+    border-left: thin #fff solid;
 }
 
 .prestations ul {
+    z-index: 10;
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    background-color: rgba(105, 102, 113, 0.5);
-    background-size: 50%;
+    display: inline-flex;
+    justify-content: center;
+    background-size: 100%;
+    width: 80%;
+    height: auto;
     margin: 2%;
     padding: 5%;
-    border: thin #fff solid;
-    border-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #fff);
-    width: 40%;
-    height: 35%;
+
 }
 
 .prestations li {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
     margin: 10%;
-    padding: 2%;
+    padding: 10%;
     background-color: #ffffff;
-    background-size: cover;
-    font-size: 2em;
+    background-size: contain;
+    font-size: 1.5em;
     color: #652581;
-    border: thin #652581 solid;
+    border: thin #b3b2b2 solid;
     border-radius: 5px;
     vertical-align: middle;
-    width: 120%;
+    width: 150%;
     height: auto;
+    text-align: center;
+
 }
 
 .col-sm-5-texteprestations {
-    display: flex;
-    justify-content: flex-start;
-    z-index: 7;
-    background-color: rgba(105, 102, 113, 0.8);
+    display: inline-flex;
+    justify-content: space-between;
+    z-index: 10;
     background-size: cover;
     flex-direction: column;
-    border: thin #fff solid;
-    border-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #fff);
-    margin-top: 10%;
-    padding: 2%;
-    width: 40%;
-    height: 100%;
-    
-
+    margin-left: 10%;
+    padding: 3%;
+    width: 50%;
+    height: auto;
+    border-left: thin #fff solid;
 }
+
+
 
 
 .imgprestations {
@@ -707,8 +718,8 @@ iframe{
     background-blend-mode: hard-light;
     height: 100px;
     background-attachment: fixed;
-    background-size: cover;
-    background-position: right;
+    background-size: 130%;
+    background-position: 0 center;
     border: thin #fff solid;
     border-radius: 10px;
 }
@@ -719,26 +730,26 @@ iframe{
 ============================================================================================================================== */
 
 .temoignages {
-    background-image: url(jmdimages/chapeaunb.jpg);
-    background-color: #652581;
-    background-blend-mode: soft-light;
-    background-position: center;
+    background-color: transparent;
     background-size: cover;
-    height: 200vh;
-    
-}   
+    height: auto;
 
-.col-sm-8-remerciements {
+}
+
+.col-remerciements {
     display: flex;
     justify-content: center;
-    background-color: rgba(105, 102, 113, 0.5);
+    /* background-color: rgba(105, 102, 113, 0.5);
     background-size: cover;
     border: thin #fff solid;
-    border-radius: 10px;
-    filter: drop-shadow(0 0 0.75rem #fff);
+    border-radius: 10px; */
+    filter: drop-shadow(0 0 0.75rem #000);
     margin: 2%;
     padding: 2%;
 }
+
+
+
 
 .temoin {
     justify-content: center;
@@ -747,7 +758,6 @@ iframe{
     background-size: cover;
     display: flex;
     justify-content: center;
-  /*  border: thin #fff solid; */
     padding: 2%;
     margin: 2%;
     border-radius: 10px;
@@ -762,7 +772,7 @@ iframe{
     padding: 2%;
     margin: 5%;
     width: 50%;
-    border: thin #fff solid;  
+    border: thin #fff solid;
 }
 
 
@@ -780,18 +790,18 @@ iframe{
     justify-content: center;
     flex-direction: column;
     background-size: cover;
-    border-bottom: thin #fff solid;		
+    border-bottom: thin #fff solid;
     margin: 2%;
     padding: 2%;
     text-align: center;
 }
 
-.jombotron{
-	background-color:  rgba(105, 102, 113, 0.5);
-	border-radius: 10px;
-	border: thin #fff solid;		
-	padding: 2%;
-	height: 100%;
+.jombotron {
+    background-color: rgba(105, 102, 113, 0.5);
+    border-radius: 10px;
+    border: thin #fff solid;
+    padding: 2%;
+    height: 100%;
 }
 
 
@@ -809,7 +819,10 @@ iframe{
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 150vh;
+    height: auto;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border: thin #fff solid;
 }
 
 
@@ -823,35 +836,47 @@ iframe{
     position: relative;
     width: 100%;
     height: auto;
-
 }
 
 
-input{
+label {
+    height: 1em;
+    border-color: aqua;
+}
+
+
+input {
+    height: 2em;
     background-color: #fff;
-    border-radius: 10px;  
+    border-radius: 10px;
     width: 100%;
     justify-content: center;
     color: #696671;
+    padding: 5%;
 }
 
-.input-group{
-    margin-top: 10%;
+.input-group {
+    height: 2em;
+    width: 100%;
     color: #696671;
+    border-radius: 10px;
+    padding: 5%;
+    margin-top: 5%;
+    justify-content: flex-start;
+    vertical-align: middle;
 }
 
 form {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     column-count: 2;
-
-    position: relative;
     width: 100%;
-    align-content: flex-start;
+    position: relative;
 }
 
-select:hover{
-  background-color: #b3b2b2;
+select:hover {
+    background-color: #b3b2b2;
     color: #fff;
 }
 
@@ -862,12 +887,13 @@ textarea {
     background-size: cover;
     width: 100%;
     position: relative;
-    padding: 2%;
+    padding: 5%;
     resize: vertical;
     border-radius: 10px;
     border-bottom: 2px #696671 solid;
 
-}        
+}
+
 
 
 
