@@ -83,10 +83,12 @@ html {
 }
 
 h1 {
+    color: #fff;
     margin-top: 10%;
 }
 
 h2 {
+    color: #fff;
     margin-top: 5%;
     word-spacing: 3em;
 }
@@ -97,16 +99,7 @@ h4 {
     width: 100%;
 }
 
-
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-h7 {
+h3,h5,h6,h7 {
     color: #fff;
 }
 
@@ -171,7 +164,7 @@ body {
     background-color: rgb(69, 66, 71);
     opacity: 0.9;
     overflow-y: hidden;
-    transition: 0.3s;
+    transition: 0.3s ease;
     border: thin #fff solid;
 }
 
@@ -191,7 +184,7 @@ body {
     text-decoration: none;
     color: #fff;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .overlay a:hover,
@@ -321,14 +314,17 @@ body {
 
 }
 a:hover span{ 
-	display:block; 
+	display:flex; 
     color: #fff;
+    width: 100%;
+    height: auto;
 
   
 }
 
 a:hover{
     color: #652581;
+
     
 }
 
@@ -460,6 +456,7 @@ logo img {
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     border: thin #fff solid;
+    height: 100vh;
     
 
 }
@@ -540,7 +537,7 @@ logo img {
     z-index: 5;
     width: 45%;
     height: 100%;
-    padding: 2%;
+    padding: 5%;
     margin-top: 20%;
 
 }
@@ -702,7 +699,7 @@ figcaption p {
     background-size: cover;
     flex-direction: column;
     margin-left: 10%;
-    padding: 3%;
+    padding: 5%;
     width: 50%;
     height: auto;
     border-left: thin #fff solid;
@@ -842,25 +839,27 @@ label {
     height: 1em;
     border-color: aqua;
 }
-
+label{
+    height: auto;
+    width: 100%;
+}
 
 input {
     height: 2em;
     background-color: #fff;
     border-radius: 10px;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     color: #696671;
     padding: 5%;
 }
 
 .input-group {
-    height: 2em;
+    height: auto;
     width: 100%;
     color: #696671;
     border-radius: 10px;
-    padding: 5%;
-    margin-top: 5%;
+    margin-top: 6%;
     justify-content: flex-start;
     vertical-align: middle;
 }
@@ -906,7 +905,7 @@ footer #button {
     border-radius: 35px;
     margin: 0 auto;
     position: relative;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     color: #fff;
     
 }
@@ -928,13 +927,13 @@ footer {
     height: 2em;
     overflow: hidden;
     margin: 0 auto;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     z-index: 10;
 }
 
 footer:hover {
 
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     height: 15em;
     filter: drop-shadow(0 0 0.75rem #fff);
 }
